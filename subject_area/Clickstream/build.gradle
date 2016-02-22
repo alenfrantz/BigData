@@ -1,0 +1,19 @@
+apply plugin: 'java'
+
+
+
+apply from: "$rootDir/gradle/artifacts.gradle"
+apply from: "$rootDir/gradle/workflows.gradle"
+apply from: "$projectDir/workflow/flow.gradle"
+
+
+sourceCompatibility = 1.5
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}

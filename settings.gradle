@@ -1,0 +1,7 @@
+include 'subject_area'
+
+include 'Common'
+
+include 'subject_area/Common'
+rootProject.children.find { it.name == 'subject_area/Common' }.name = 'Common'
+
